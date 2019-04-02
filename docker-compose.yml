@@ -5,6 +5,8 @@ services:
     container_name: node
     ports: 
       - 0.0.0.0:3132:3000
+    volumes: 
+      - ./src:/www/src:ro
     working_dir: /www/src
     command: node index.js
   nginx: 
