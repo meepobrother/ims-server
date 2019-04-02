@@ -4,7 +4,7 @@ services:
     image: node
     container_name: node
     ports: 
-      - 0.0.0.0:3132:3000
+      - 3132:3000
     volumes: 
       - ./src:/www/src
     working_dir: /www/src
@@ -13,8 +13,8 @@ services:
     image: nginx
     container_name: nginx
     ports: 
-      - 0.0.0.0:80:80
-      - 0.0.0.0:81:81
+      - 80:80
+      - 81:81
     networks: 
       - app
     volumes: 
@@ -26,7 +26,7 @@ services:
     restart: always
     container_name: mysql
     ports:
-      - 0.0.0.0:3306:3306
+      - 3306:3306
     environment:
       MYSQL_ROOT_PASSWORD: 123456
       MYSQL_DATABASE: test
