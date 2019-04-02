@@ -2,7 +2,8 @@ version: "2"
 services: 
   node:
     image: node
+    container_name: node
     volumes: 
       - ./src:/www/src
     working_dir: /www/src
-    command: node index.js
+    command: npm start
