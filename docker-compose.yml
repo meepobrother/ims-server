@@ -6,7 +6,7 @@ services:
     ports: 
       - 0.0.0.0:3132:3000
     volumes: 
-      - ./src:/www/src:ro
+      - ./src:/www/src
     working_dir: /www/src
     command: node index.js
   nginx: 
