@@ -5,11 +5,12 @@
   "main": "index.js",
   "scripts": {
     "prestart": "npm install",
-    "start": "node index.js"
+    "start": "pm2 start index.js"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "pm2": "^3.4.1",
     "ts-node": "^8.0.3",
     "typescript": "^3.4.1"
   },
