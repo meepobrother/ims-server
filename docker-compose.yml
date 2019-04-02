@@ -1,0 +1,7 @@
+version: "2"
+services: 
+  image: node
+  volumes: 
+    - ./src:/www/src
+  working_dir: /www/src
+  command: ['node index.js']
