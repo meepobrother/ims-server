@@ -1,14 +1,10 @@
 version: "2"
 services: 
   node:
-    image: node
+    build: .
     container_name: node
     ports: 
       - 0.0.0.0:3132:3000
-    volumes: 
-      - ./src:/www/src
-    working_dir: /www/src
-    command: npm start
   nginx: 
     image: nginx
     container_name: nginx
