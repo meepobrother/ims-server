@@ -5,4 +5,6 @@ app.get('/', (req, res, next) => {
     res.end(`hello world`)
 })
 
-app.listen(3132);
+app.listen(3000, () => {
+    console.log(`app bootstrap at 3000`)
+});
