@@ -1,10 +1,12 @@
 version: "2"
 services: 
   node:
-    build: .
+    image: mysql
     container_name: node
     ports: 
       - 0.0.0.0:3132:3000
+    working_dir: /www/src
+    command: node index.js
   nginx: 
     image: nginx
     container_name: nginx
