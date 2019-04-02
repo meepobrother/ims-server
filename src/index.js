@@ -1,8 +1,8 @@
-const express = require('express')
-const app = express();
+const Koa = require('koa');
+const app = new Koa();
 
-app.listen('/', (req, res, next) => {
-    res.end(`hello world`)
-})
+app.use(async ctx => {
+   ctx.body = 'Hello docker';
+});
 
-app.listen(3132)
+app.listen(3000);
