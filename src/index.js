@@ -6,5 +6,5 @@ app.get('/', (req, res, next) => {
 })
 
 app.listen(3000, () => {
-    console.log(`app bootstrap at 3000`)
+    console.log(`app bootstrap`)
 });
