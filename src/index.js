@@ -1,1 +1,1 @@
-shelljs.exec(`proxy2 server -p 3000`);
+console.log('shelljs')
