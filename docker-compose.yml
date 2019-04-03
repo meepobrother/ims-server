@@ -8,7 +8,7 @@ services:
     volumes: 
       - ./src:/www/src
     working_dir: /www/src
-    command: node index.js
+    command: npm start
   nginx: 
     image: nginx
     container_name: nginx
